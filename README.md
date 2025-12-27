@@ -55,92 +55,125 @@ GearGuard is a full‑stack **MERN** application for managing industrial equipme
 
 ## 📁 Project Structure
 
-gearguard-mern/
-├── client/ # React frontend
-│ ├── package.json
-│ └── src/
-│ ├── App.jsx
-│ ├── index.js
-│ ├── components/
-│ │ ├── EquipmentForm.jsx
-│ │ ├── EquipmentList.jsx
-│ │ ├── Navbar.jsx
-│ │ ├── RequestCalendar.jsx
-│ │ └── RequestKanban.jsx
-│ ├── pages/
-│ │ ├── Dashboard.jsx
-│ │ ├── Equipment.jsx
-│ │ ├── Requests.jsx
-│ │ └── Teams.jsx
-│ ├── services/api.js
-│ └── styles/
-│ ├── Calendar.css
-│ ├── Dashboard.css
-│ ├── Equipment.css
-│ ├── Kanban.css
-│ ├── Navbar.css
-│ └── Teams.css
-├── server/ # Express backend
-│ ├── package.json
-│ ├── server.js
-│ ├── config/
-│ │ └── db.js
-│ ├── controllers/
-│ │ ├── equipmentController.js
-│ │ ├── requestController.js
-│ │ └── teamController.js
-│ ├── models/
-│ │ ├── Equipment.js
-│ │ ├── MaintenanceRequest.js
-│ │ └── MaintenanceTeam.js
-│ ├── routes/
-│ │ ├── equipment.js
-│ │ ├── request.js
-│ │ └── team.js
-│ └── middleware/
-│ └── errorHandler.js
-└── .gitignore
+
+Gearguard-MERN/
+├── client/                     # React frontend
+│   ├── README.md
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── public/
+│   └── src/
+│       ├── App.jsx
+│       ├── App.css
+│       ├── index.js
+│       ├── index.css
+│       ├── reportWebVitals.js
+│       ├── setupTests.js
+│       ├── components/
+│       │   ├── Navbar.jsx
+│       │   ├── EquipmentForm.jsx
+│       │   ├── EquipmentList.jsx
+│       │   ├── RequestCalendar.jsx
+│       │   ├── RequestKanban.jsx
+│       │   └── TeamList.jsx
+│       ├── pages/
+│       │   ├── Dashboard.jsx
+│       │   ├── Equipment.jsx
+│       │   ├── Requests.jsx
+│       │   └── Teams.jsx
+│       ├── services/
+│       │   └── api.js
+│       └── styles/
+│           ├── Calendar.css
+│           ├── Dashboard.css
+│           ├── Equipment.css
+│           ├── Kanban.css
+│           ├── Navbar.css
+│           └── Teams.css
+│
+├── server/                     # Express backend
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── server.js
+│   ├── .env                     # not committed (ignored)
+│   ├── config/
+│   │   └── db.js
+│   ├── controllers/
+│   │   ├── equipmentController.js
+│   │   ├── requestController.js
+│   │   └── teamController.js
+│   ├── middleware/
+│   │   └── errorHandler.js
+│   ├── models/
+│   │   ├── Equipment.js
+│   │   ├── MaintenanceRequest.js
+│   │   └── MaintenanceTeam.js
+│   └── routes/
+│       ├── equipment.js
+│       ├── request.js
+│       └── team.js
+│
+├── .gitignore
+└── README.md
 
 
 ---
 
 ## 🚀 Getting Started (Local Setup)
 
-### 1. Clone the repository
+Follow the steps below to run the **Gearguard MERN** project locally.
 
+---
+
+### 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/divyeshgangara2211/Gearguard-MERN.git
 cd Gearguard-MERN
 
 
+
 ### 2. Backend setup (`server`)
 
+```bash
 cd server
 npm install
 
 
-Create a `.env` file inside `server`:
+## Create a `.env` file inside `server`:
 
+```bash
 MONGO_URI=your_mongodb_connection_string
 PORT=5000
 
 
-Run the backend:
 
+## Run the backend:
+
+```bash
 npm run dev
 
 
-The API will be available at `http://localhost:5000`. [web:181]
+## Backend API will be available at:
+```bash
+http://localhost:5000
+
+
 
 ### 3. Frontend setup (`client`)
 
 In a new terminal from project root:
 
+```bash
 cd client
 npm install
 npm start
 
 
-The React app will run on `http://localhost:3000`. [web:158]
+React application will be available at:
+```bash
+http://localhost:3000
+
 
 ---
 
